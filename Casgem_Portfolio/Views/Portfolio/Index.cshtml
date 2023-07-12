@@ -1,0 +1,23 @@
+﻿@using Casgem_Portfolio.Models.Entites
+@model List<About>
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+@Html.Partial("PartialHead")
+<body>
+    @Html.Partial("HeaderPartial")
+    @Html.Action("FeaturePartial")
+    @Html.Action("WhoamiPartial")
+    @Html.Action("MyResume")
+    @Html.Action("ServicesPartial")
+    @Html.Partial("StatisticPartial")
+    @Html.Action("TestMonialPartial")
+    @Html.Action("VideoPartial")
+    @Html.Partial("FreelancePartial")
+    @Html.Partial("FooterScript")
+    @Html.Partial("ScriptPartial")
+</body>
+</html>
+

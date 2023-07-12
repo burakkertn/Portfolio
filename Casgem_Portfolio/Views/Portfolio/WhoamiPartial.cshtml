@@ -1,0 +1,31 @@
+﻿@model List<Casgem_Portfolio.Models.Entites.About>
+
+
+@foreach (var item in Model)
+{
+<section class="w3l-index3" id="about">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="position-relative">
+                        <img src="@item.ImageUrl" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 mt-lg-0 mt-5">
+                    <h5 class="title-small mb-2">Ben Kimim?</h5>
+                    <h3 class="title-big">Ben @item.Name &nbsp; @item.Surname, @item.Address</h3>
+                    <p class="mt-4">
+                        @item.Des
+                    </p>
+                    <a target="_blank" href="@item.Mail" class="btn btn-style btn-primary mt-lg-5 mt-4">CV'Mi GÖRÜNTÜLE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+}
+

@@ -1,0 +1,46 @@
+﻿@model List<Casgem_Portfolio.Models.Entites.Video>
+
+
+
+    <section class="w3l-index5" id="about">
+        <div class="new-block py-5">
+            @foreach (var item in Model)
+            {
+
+                <div class="container py-lg-5">
+                    <div class="middle-section text-center">
+                        <div class="section-width">
+                            <h3 class="title-big">
+                                @item.VideoTitle
+                            </h3>
+                            <p class="mt-3">
+                              @item.VideoDes
+                            </p>
+                        </div>
+                        <div class="history-info mt-5">
+                            <div class="position-relative">
+                                <img src="@item.VideoUrl" class="img-fluid radius-image video-popup-image"
+                                     alt="video-popup">
+
+                                <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
+                                    <span class="video-play-icon">
+                                        <span class="fa fa-play"></span>
+                                    </span>
+                                </a>
+
+                                <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                                    <iframe src="https://www.youtube.com/embed/Rr4i6kgg7MY" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                            <iframe src="https://www.youtube.com/embed/Rr4i6kgg7MY"  allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+    </section>

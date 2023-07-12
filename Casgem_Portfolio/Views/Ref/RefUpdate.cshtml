@@ -1,0 +1,28 @@
+﻿@model Casgem_Portfolio.Models.Entites.Ref
+@{
+    ViewBag.Title = "ProjectUpdate";
+    Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
+}
+
+<h2>Referans Güncelleme Sayfası</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.IDRef)
+    @Html.Label("Adı Soyadı")
+    @Html.TextBoxFor(x => x.RefNameSurname, new { @class = "form-control" })
+    <br />
+    @Html.Label("Unvanı/Mesleği")
+    @Html.TextBoxFor(x => x.RefJob, new { @class = "form-control" })
+    <br />
+    @Html.Label("Telefon Numarası")
+    @Html.TextBoxFor(x => x.RefNumber, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("Mail Adresi")
+    @Html.TextBoxFor(x => x.RefMail, new { @class = "form-control" })
+    <br />
+    <br />
+    @Html.Label("Fotoğraf URL")
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Hizmeti Güncelle</button>
+</form>
