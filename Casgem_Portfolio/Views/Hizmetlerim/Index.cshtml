@@ -1,0 +1,36 @@
+﻿@model List<Casgem_Portfolio.Models.Entites.Service>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
+    int count = 0;
+}
+
+<h2>Hizmetlerim</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Servis Başlığı</th>
+        <th>Servis İkonu</th>
+        <th>Servis Açıklaması</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.ServiceTitle</td>
+            <td>@item.ServiceIcon</td>
+            <td>@item.ServiceContent</td>
+
+            <td><a href="/Hizmetlerim/DeleteService/@item.IDServices" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Hizmetlerim/ServicesUpdate/@item.IDServices" class="btn btn-success">Güncelle</a></td>
+
+        </tr>
+    }
+</table>
+<br />
+<a href="/Hizmetlerim/AddHizmet" class="btn btn-primary">Yeni Servis Ekle</a>
+
+

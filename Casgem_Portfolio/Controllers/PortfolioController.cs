@@ -26,11 +26,16 @@ namespace Casgem_Portfolio.Controllers
         }
         public PartialViewResult ScriptPartial()
         {
+            var textArray = db.Skills.Select(x => x.Skill1).ToArray();
+
+            ViewBag.skillArray = textArray;
             return PartialView();
         }
         public PartialViewResult FooterScript()
         {
-            return PartialView();
+          
+            var values = db.SocialMedias.ToList();
+            return PartialView(values);
         }
         public PartialViewResult TestMonialPartial()
         {

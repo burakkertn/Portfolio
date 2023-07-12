@@ -36,5 +36,8 @@ namespace Casgem_Portfolio.Models.Entites
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TDepertmant> TDepertmants { get; set; }
         public virtual DbSet<Video> Videos { get; set; }
+        public virtual DbSet<SocialMedia> SocialMedias { get; set; }
+        public virtual DbSet<Skill> Skills { get; set; }
+        public virtual DbSet<Admin> Admins { get; set; }
     }
 }

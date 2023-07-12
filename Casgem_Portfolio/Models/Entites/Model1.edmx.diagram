@@ -17,6 +17,9 @@
         <EntityTypeShape EntityType="CasgemPortfolioModel.TDepertmant" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="CasgemPortfolioModel.Video" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
         <AssociationConnector Association="CasgemPortfolioModel.FK_Empolee_TDepertmant" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.SocialMedia" Width="1.5" PointX="5.375" PointY="9.75" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.Skill" Width="1.5" PointX="9.375" PointY="6.75" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.Admin" Width="1.5" PointX="7.375" PointY="9.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
