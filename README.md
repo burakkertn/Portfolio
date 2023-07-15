@@ -1,15 +1,15 @@
-<a name="readme-top"></a>
-#  .NET Framework - Portfolio Projesi 
-CASGEM Full Stack Developer .Net Core Eğitimi 1.Proje 1 ve 2.Gün Düzenlemeler UI Dinamik Hale Getirildi ( Service, Referans, About, Video)
+<h1>Kullanılan Arayüzler</h1>
+
+<p>-UI</p>
+<p>-Admin paneli</p>
+<p>-Login Paneli</p>
 
 
-## ^
+<h1> Proje'de kullanılan Teknolojiler </h1>
 
-- .NET Framework 4.7.2
-- MVC
-- C#
-- JavaScript
-- HTML, CSS
+<p>- .NET Framework 4.7.2</p>
+<p>- MsSql</p>
+
 
   
 # Görseller
